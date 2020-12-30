@@ -1,2 +1,2 @@
 # leetcode
-All of my Leetcode submissions in one place; Cleaned &amp; Commented.
+All of my competitive code submissions in one place; Cleaned &amp; Commented.
