@@ -22,33 +22,28 @@ for i in range(t):
 
         #check if the character is in first 8 or last 8
         if encoded_string[0] == '0':
-            alphabets = alphabets[0:len(alphabets)/2]
+            alphabets = alphabets[0:len(alphabets)//2]
         elif encoded_string[0] == '1':
-            alphabets = alphabets[len(alphabets)/2:len(alphabets)]
+            alphabets = alphabets[len(alphabets)//2:len(alphabets)]
         
         #check if the character is in first 4 or last 4
         if encoded_string[1] == '0':
-            alphabets = alphabets[0:len(alphabets)/2]
+            alphabets = alphabets[0:len(alphabets)//2]
         elif encoded_string[1] == '1':
-            alphabets = alphabets[len(alphabets)/2:len(alphabets)]
+            alphabets = alphabets[len(alphabets)//2:len(alphabets)]
         
         #check if the character is in first 2 or last 2
         if encoded_string[2] == '0':
-            alphabets = alphabets[0:len(alphabets)/2]
+            alphabets = alphabets[0:len(alphabets)//2]
         elif encoded_string[2] == '1':
-            alphabets = alphabets[len(alphabets)/2:len(alphabets)]
+            alphabets = alphabets[len(alphabets)//2:len(alphabets)]
 
         #check if the character is in first 4 or last 4
         if encoded_string[3] == '0':
-            alphabets = alphabets[0:len(alphabets)/2]
+            alphabets = alphabets[0:len(alphabets)//2]
         elif encoded_string[3] == '1':
-            alphabets = alphabets[len(alphabets)/2:len(alphabets)]
+            alphabets = alphabets[len(alphabets)//2:len(alphabets)]
         
         decoded_string += alphabets[0]
         
     print(decoded_string)
-    
-
-
-
-        
