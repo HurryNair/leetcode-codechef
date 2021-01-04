@@ -23,6 +23,10 @@ for i in range(t):
     total_votes_a = total_votes(a)
     total_votes_b = total_votes(b)
 
+    if total_votes_a == total_votes_b:
+        print(0)
+        continue
+    
     for i in range(max_swaps):
         tmp = min(a)
         tmp2 = max(b)
