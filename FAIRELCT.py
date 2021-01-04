@@ -23,7 +23,7 @@ for i in range(t):
     total_votes_a = total_votes(a)
     total_votes_b = total_votes(b)
 
-    if total_votes_a == total_votes_b:
+    if total_votes_a > total_votes_b:
         print(0)
         continue
     
