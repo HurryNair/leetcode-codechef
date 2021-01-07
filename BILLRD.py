@@ -2,24 +2,29 @@
 
 t = int(input())
 
-for i in range(t):
-    n, k, x, y = map(int, input().split())
+for t in range(int(input())):
+    n ,k, x, y = map(input().split())
+    if x == y:
+        print(n,n)
+    else:
+        l = []
+        if x < y:
+            poc = [[x+n-y, n],[n, n-y+x],[y-x, 0],[0, y-x]]
+            if x < y:
+                poc = []
+                pass
+            else:
+                poc = [[n, y+n-x], [y+n-x,n],[0, x-y], [x-y, 0]]
+        fp = poc[(k-1)%4]
+        print(fp[0], fp[1])
 
-    # if ball hits the right side of the table
-    # decrement x & increment y
-    # increment collission 
 
-    # if ball hits the top side of the table
-    # decrement x & decrement y
-    # increment collission
- 
-    # if ball hits the left side of the table
-    # increment x & decrement y
-    # increment collission
-    
-    # if ball hits the bottom side of the table
-    # increment x & increment y 
-    # increment collission  
+
+
+
+
+
+
 
 
 
