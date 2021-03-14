@@ -2,7 +2,7 @@
 #! /bin/usr/python3
 
 '''
-You are given an integer C. Let d be the smallest integer such that 2d is strictly greater than C.
+You are given an integer C. Let d be the smallest integer such that 2**d is strictly greater than C.
 
 Consider all pairs of non-negative integers (A,B) such that A,B<2d and A⊕B=C (⊕ denotes the bitwise XOR operation).
 
@@ -26,3 +26,30 @@ Example case 2: The binary representation of 10 is "1010".
 We can use A=13 ("1101") and B=7 ("0111"). This gives us the maximum product 91.
 
 '''
+
+# Accept inputs
+t = int(input())
+
+for i in range(t):
+    C = int(input())
+
+    # define d by implementing log
+    import math
+    d = int(math.log(C, 2)) + 1
+
+    # brute force solution
+    max_prod = 0
+    for i in range(0, 2**d):
+        print("i" + str(i))
+        for j in range(i+1, (2**d)+1):
+            print("j" + str(j))
+            print(i^j)
+            if i^j == C:
+                if i*j > max_prod:
+                    max_prod = i*j
+    
+print(max_prod)
+
+
+
+
