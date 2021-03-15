@@ -50,6 +50,27 @@ for i in range(t):
     
 print(max_prod)
 
+    # bit manipulation techniques
+    # Find number of bits in C, call this bit_count
+    # Let A be 2**(bit_count-1)-1; Found this pattern on both test inputs
+    # Since what we need is A ^ B = C
+    # A ^ A ^ B = A ^ C
+    # B = A ^ C
+    # Compute A*B & return it
+
+    temp = C
+
+    bit_count = 0
+    while C > 0:
+        temp = temp/2
+        bit_count += 1
+    
+    # Define A
+    A = 2**(bit_count-1) - 1
+    # Find B
+    B = A ^ C
+
+    print(A*B)
 
 
 
