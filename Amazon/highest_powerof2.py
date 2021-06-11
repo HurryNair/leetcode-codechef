@@ -2,12 +2,12 @@
 Highest power of 2 less than or equal to given number
 """
 
-from math import log
+from math import log, pow
 
 #Accept input integer
 n = 500
 
-print(2**(int(log(n,2))))
+print(pow(2,(int(log(n,2)))))
 
 print("#"*40)
 
@@ -19,6 +19,7 @@ def highestpowerof2(n):
 
 print(highestpowerof2(500))
      
+print("#"*40)
 
 
 
