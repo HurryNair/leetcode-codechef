@@ -4,6 +4,8 @@ A number spiral is an infinite grid with its upper-left cell with value 1
 Solution is to find the value stored in the row x and column y of this grid
 """
 
+# solution_incomplete
+
 def findValue(y, x):
 
     z = max(y, x)
