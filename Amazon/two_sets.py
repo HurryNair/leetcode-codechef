@@ -25,8 +25,9 @@ Sum = 132
 
 def two_sets(n):
 
-    if (n*(n-1)/2)%2 : # If n-sum is odd
+    if (n*(n+1)/2)%2 : # If n-sum is odd
         print("NO") # No way we can split it into 2 equal sets
+        return 0
 
     l1 = []
     l2 = [] # data containers to hold the two equal sets
@@ -60,15 +61,19 @@ def two_sets(n):
     # We therefore go back & offset first list by 3 or 4 based on n%4 so that the last values
     # are calculated there & add the first ones here directly above the comment
 
+    print("YES")
+
     n = len(l1)
-    print("Length of l1: ", n)
+    print(n)
     for num in l1:
-        print(num)
+        print(num, end = " ")
+    
+    print("")
 
     n = len(l2)
-    print("Length of l2: ", n)
+    print(n)
     for num in l2:
-        print(num)
+        print(num, end = " ")
 
 if __name__ == "__main__":
     two_sets(3)
