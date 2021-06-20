@@ -10,7 +10,7 @@ Find the number of trailing zeroes in n!
 #    for i in range(5, n, 5*i):
 #        ans += n/i
 
-countTrailingZeroesFac(5)
+#countTrailingZeroesFac(5)
 
 # Method 2
 # while n > 5
