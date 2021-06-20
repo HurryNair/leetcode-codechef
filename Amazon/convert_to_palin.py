@@ -6,6 +6,51 @@ Given a string your task is to reorder its letters in such a way that it becomes
 # Count characters & store them into a dictionary
 # If the number of odd elements in dict.values() > 1: return "No"
 
+def make_palin_d(s):
+
+    # dictionary to count occurences
+    d = {}
+
+    # Logic to count occurences
+    for char in s:
+        if char in d:
+            d[char] += 1
+        else:
+            d[char] = 1
+    
+    # Grab just the values
+    d_vals = d.values()
+
+    # Counter c to keep track of number of chars supplied odd times
+    c = 0
+    for num in d_vals:
+        if num%2:
+            c += 1
+    
+    if c > 1:
+        print("No Solution")
+        return 0
+    
+    # By this point we're sure a palin can be formed with the supplied chars
+
+    palin = "" # result
+    odd_char = ""
+
+    for char in d:
+        if d[char]%2==0:
+            for i in range(int(d[char]/2)):
+                palin += char
+        else:
+            odd_char += char
+    
+    mid = ""
+    for i in range(d[odd_char]):
+        mid += odd_char
+    
+    print(palin+mid+palin[::-1])
+    
+make_palin_d("AAAACACBA")
+
 # Approach 2
 # Create an array of integers
 # Iterate through the string
