@@ -5,10 +5,10 @@ Find the number of trailing zeroes in n!
 # method 1
 # Result would be n/5 + n/25 + n/125 +.. until denom is smaller than n
 # altering for loop iteration in this fashion is not supported by Python
-def countTrailingZeroesFac(n):
-    ans = 0
-    for i in range(5, n, 5*i):
-        ans += n/i
+#def countTrailingZeroesFac(n):
+#    ans = 0
+#    for i in range(5, n, 5*i):
+#        ans += n/i
 
 countTrailingZeroesFac(5)
 
@@ -19,14 +19,10 @@ countTrailingZeroesFac(5)
 def countTrailingZeroesFac2(n):
     ans = 0
     while n >= 5:
-        ans += n/5
+        ans += n//5
         n /= 5
     return ans
-countTrailingZeroesFac2(5)
-
-
-
-
+countTrailingZeroesFac2(23)
 
 ### side quest
 
