@@ -1,2 +1,27 @@
 - String manipulation
 - Patters in strings
+
+- 
+- 
+
+
+- 
+- Airplane ticket booking for a family of 4
+
+
+F2F round
+
+# Write a lambda function to check if the number is even
+# How would you update using REST? PUT vs POST
+# Check if there are any duplicates in a given array? I used dictionary to do this
+# How does binary search work? What is its time complexity? log(n)? why log(n)
+# What is the time complexity of a nested for loop
+# test if given string is a palindrome
+# test a function that adds two input arguments
+# whats the concept of a binary tree
+# balanced paranthesis
+
+
+- Alexa suggestion improvement
+- Demolition robot
+
