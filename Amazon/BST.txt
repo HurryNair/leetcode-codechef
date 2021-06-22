@@ -1,0 +1,61 @@
+https://www.youtube.com/watch?v=9Jry5-82I68
+
+Binary search is a fundametal div & conq paradigm; BST is the DS associated with this
+
+Toy problem:
+Runway reservation system problem [scheduling problem]
+
+- Airport with a single Runway
+- Reservations for future landings
+- Assume time is continuous
+- Reserve requests specify landing times t
+- Add t to the set r of landing times if no other landings are scheduled within k variable minutes
+- Remove from set t after plane landings
+
+- We would like to do all of these operation in O(lg n) time
+
+#################################33
+
+Example:
+time_now = 37
+r = [41.2, 49, 56.3]; k = 3
+
+53 - OK
+44 - Not allowed
+20 - Not allowed 
+
+Lets try to implement this with all the datastructures that we know keeping the efficieny requirement
+
+- Unsorted list
+-- Everything you would wanna with it is linear
+-- Addition to set is constant time [unsorted]
+-- To find out if there are other reservations around k minutes of the requested reservation, search takes O(n) time
+
+- sorted list
+-- Binary search can be used to find the insertion point
+-- Once we have the insertion point, we look left & right to do the k-minute check 
+
+-- So we do a O(log(n)) binary search
+-- We do an O(1) k minute check
+-- Worst case : Insertion point is position 0 : Insertion time is O(len(r)) or O(N)
+
+# So Mathematically
+-- Find smallest i such that r[i] >= t in O(log n) time
+-- Compare r[i] & r[i-1] against t in O(1) time
+-- Actual insertion requires shifting & could take O(n) time
+
+- sorted linked list
+-- We could insert into a linked list in O(1) by shifting pointers once we have the insertion point
+-- However there is no notion of random accessing n/2 item in a linked list since the nodes are linked & not indexed
+
+- heaps
+-- heaps are arrays that can be visualized as trees
+-- to check if there is an element in the heap that is <=k or >=k, it takes O(n) time
+
+-- minheaps
+- root element needs to be lesser than its children
+
+- dictionaries
+-- dictionaries also have the same problem
+
+ 
