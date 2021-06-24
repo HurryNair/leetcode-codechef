@@ -35,9 +35,9 @@ def two_sets(n):
     # Find the number of 4 sized windows we can have 
     # Add elements 1 & 4 from each of these windows to one list & 
     # elements 2 & 3 to the other
-    if n%4 : # if n is odd, offset by 3 so that the last 3 items are calculated 
+    if n%4 : # if n is odd, offset by 3 so that the last 3 items are calculated & first 3 are skipped
         j = 3
-    else: # if n is odd, offset by 4 so that the last 4 items are calculated 
+    else: # if n is odd, offset by 4 so that the last 4 items are calculated & first 4 are skipped
         j = 4
     for i in range(0, int((n-1)/4)):
         l1.append(4*i+1+j)
@@ -47,11 +47,11 @@ def two_sets(n):
 
     # For the portion of the array [1,2..n] after the last 4 sized window
 
-    if (n%4): # last portion would have 3 items
+    if (n%4): # handling first 3
         l1.append(1)
         l1.append(2)
         l2.append(3)
-    else:
+    else: # handling first 4
         l1.append(1)
         l1.append(4)
         l2.append(3)
