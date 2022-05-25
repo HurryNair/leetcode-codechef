@@ -1,0 +1,42 @@
+======================
+Tree question
+======================
+
+class TreeNode:
+    def __init__(val):
+        self.val = val
+        self.left = None
+        self.right = None
+
+def func(root):
+    if not root:
+        return
+    
+    print(root.val)
+    func(root.left)
+    func(root.right)
+
+func(root)
+
+Note: root is a value in a tree with 3 nodes of type TreeNode & the first one popped
+
+=======================
+Palindrome code
+=======================
+
+def func(word):
+    x = 0
+    y = len(word)
+
+    while x<y:
+        if word[x] != word[y]:
+            return False
+        x += 1
+        y -= 1
+    
+    return True
+
+func('noon')
+func('refer')
+func('thrill')
+
