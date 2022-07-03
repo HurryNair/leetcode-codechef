@@ -1,0 +1,8 @@
+Contains duplicate 1
+- Dictionary to count number of occurrences of each int
+- Dictionary values 
+- If any value > 1, early return True
+- Late return False
+
+Note: Dictionaries are a great way to count the number of occurences in a single pass
+But to check if duplicates exist, a list will suffice

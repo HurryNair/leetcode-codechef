@@ -1,0 +1,3 @@
+- Iterate through the array & create an occurences dict
+- Iterate key by key in the occurences dict & filter keys/nums that have more than one occurences
+- For these numbers, iterate with 2 nested for loops & break if abs(index2 - index1) <= k
