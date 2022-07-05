@@ -1,0 +1,9 @@
+- arr1 size = m
+- arr2 size = n
+- arr1 allocated size = m+n
+
+- start populating arr1 from the end with max(arr1[-1], arr2[-1])
+- work backwards until neither arrays are empty
+- then pick the non-empty array and append it backwards
+
+- best explained by reading the solution code

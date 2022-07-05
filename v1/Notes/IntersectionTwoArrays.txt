@@ -1,0 +1,9 @@
+- find intersection between 2 arrays
+- print common numbers as many times as they occur in common
+- order of printing doesnt matter
+
+- use a hashmap to count number of occurences of each value
+- do this for both arrays
+- check if the 2 maps have common keys
+- if yes, take min of the 2 vlaues of the 2 keys and add that key those many times to a result array
+- return result
