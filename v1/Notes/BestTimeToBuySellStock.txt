@@ -1,0 +1,5 @@
+- idea is to essentially find max diff between 2 numbers in the array
+- One condition is the array can only be traversed forward
+
+- attempt must be to register the min so far 
+- calculate current difference and keep track of max difference so far 
