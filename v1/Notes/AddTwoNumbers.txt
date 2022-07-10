@@ -1,0 +1,5 @@
+We being by creating a reverseList method that reverses a linked list. This code is from the leetcode problem "Reversing a Linked List"
+We create a method getNumber which gets the number from a linked list.
+We reverse l1 and l2 , get their numbers, then add them together.
+We create a new linked list with the value of l1_num + l2_num
+We reverse l3 and solve the problem!

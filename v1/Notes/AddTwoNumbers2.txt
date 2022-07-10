@@ -1,0 +1,3 @@
+We extract the numbers from the linkedlist
+We add the numbers up
+We put it back in the linkedlist
