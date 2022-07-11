@@ -1,0 +1,4 @@
+- Create a fast pointer that updates to current.next & a fast pointer that updates to current.next.next each cycle
+- Ensure that current & current.next dont return a None before each cycle
+- In any of the iterations, if slow == fast: early return True
+- Otherwise, current will be null eventually and loop will terminate - return false in this scenario 
