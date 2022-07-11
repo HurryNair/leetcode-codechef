@@ -1,0 +1,4 @@
+- Two factors matter width of the bucket & min height of the wall
+- place two pointers one at each end to maximize bucket width
+- now focus on maximizing bucket height by shifting the pointers basis solely on height
+- drop short walls and shift pointer to next one
