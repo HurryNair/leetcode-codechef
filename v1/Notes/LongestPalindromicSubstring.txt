@@ -1,0 +1,14 @@
+- Brute Force
+Generate all substrings
+Check if they are palindromes
+Keep track of the longest one that passes above condition and return
+
+- Optimized solution
+Consider each element is the center of the longest palindrome string
+Extend leftwards and rightwards as long as left element == right element
+Take into account that palindromes can have both odd number of chars as well as even & handle them individually
+Return the max of all
+
+- Another minor optimization
+Copying s[l:r+1] into res can become an O(n) operation altogether taking complexity back to n^3
+Keep track of indices instead

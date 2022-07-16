@@ -1,0 +1,5 @@
+- set start of longest substring without duplicates to idx 0
+- Keep track of chars you see and their indices in a hashmap
+- When you see something repeat, check if your current start is behind the previous occurence of that
+- If yes, offset your current start by 1
+- res = max(res, index-start+1)
