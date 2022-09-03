@@ -1,0 +1,7 @@
+- run thru the array & count the number of occurences of each value using a hashmap
+
+- for each number check if taget-number exists in the hashmap
+- if yes, increment final count, decrement hashmap[number] & check if hashmap[number] == 0
+- if yes pop number from hashmap & continue with next iteration
+
+- if target-num not in hashmap, simply index number into the hashmap properly
